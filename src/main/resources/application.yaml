@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/infSystem
+    username: postgres
+    password: 1424
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jpa:
+    database: postgresql
+#    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+
+storage:
+  location: ./files
